@@ -1,0 +1,95 @@
+<ion-view>
+<style>
+	
+</style>
+    <ion-content >
+        <style>
+            .header .col {
+              background-color:lightgrey;
+            }
+            
+            #searchByName .col {
+              border: solid 1px grey;
+              border-bottom-style: none;
+              border-right-style: none;
+            }
+            
+            #searchByName .col:last-child {
+              border-right: solid 1px grey;
+            }
+            
+           #searchByName .header:last-child .col {
+              border-bottom: solid 1px grey;
+            }
+        </style>
+        <div class="padding" >
+            <div class="Headdingpad text-center " style="padding-bottom: 20px;">
+				<h3 class="flying checkfly assertive" style="color:#5d3002"><b>Pay Me</b></h3>
+				
+            </div>
+			<div class="card">
+			  <div class="item item-text-wrap" style="color:red">
+			  <p></p>
+				You do not have a bank account on record. You must add a bank account by logging into the sterlinghsa.com to schedule disbursement
+			  <p></p>
+			  </div>
+			</div>	
+			<div class="list" id="result" style="padding: 10px;">
+				<div  class="" id="searchByName" >
+					<div class="row header">
+						<div class="col">Available Balance:</div>
+						<div class="col">$1,084.70</div>
+					</div>
+				</div>
+			</div>
+			<div class="list">
+				<label class="item item-input item-select">
+					<div class="input-label">
+					  Select Bank Account<span style="color: red;">*</span>
+					</div>
+					<select>
+					  <option selected  disabled value="">--Select Bank--</option>
+					  <option>Wells Fargo Bud</option>
+					  <option>Wells Fargo Sarah</option>
+					</select>
+				</label>
+			</div>
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Enter Amount<span style="color: red;">*</span></span>
+					<input type="tel" placeholder="">
+				</label>
+			</div>
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Transaction Date<span style="color: red;">*</span></span>
+					<input type="text" ng-click="getTransDate()" ng-model="TransDate" placeholder="">
+				</label>
+			</div>
+			<div class="list">
+				<label class="item item-input item-select">
+					<div class="input-label">
+					  Category<span style="color: red;">*</span>
+					</div>
+					<select>
+					  <option selected  disabled value="">--Select Category--</option>
+					  <option>Qualified</option>
+					  <option>Non-Qualified</option>
+					</select>
+				</label>
+			</div>
+			<div class="row text-center">
+				<div class="col">
+					<button class="button button-light">Upload Receipt</button>
+				</div>
+            </div>
+			<br>
+			<div class="row text-center">
+				<div class="col">
+					<button style="background-color:#bb680b;color:#fff" class="button  curve">Submit Disbursement</button>
+				</div>
+            </div>
+            
+        </div>
+    </ion-content>
+</ion-view>

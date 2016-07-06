@@ -1,0 +1,32 @@
+<ion-view>
+<style>
+	
+</style>
+    <ion-content >
+        <div class="padding" >
+            <div class="Headdingpad text-center " style="padding-bottom: 20px;">
+				<h3 class="flying checkfly assertive" style="color:#5d3002"><b>Activity Statement</b></h3>
+				
+            </div>
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Start Date(MM/DD/YYYY)<span style="color: red;">*</span></span>
+					<input type="text" ng-click="getStartDate()" ng-model="activity.startDate" placeholder="">
+				</label>
+			</div>
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">End Date(MM/DD/YYYY)<span style="color: red;">*</span></span>
+					<input type="text"  ng-click="getEndDate()" ng-model="activity.EndtDate" placeholder="">
+				</label>
+			</div>
+			
+			<div class="row text-center">
+				<div class="col">
+					<button style="background-color:#bb680b;color:#fff" class="button  curve">Run Statement</button>
+				</div>
+            </div>
+            
+        </div>
+    </ion-content>
+</ion-view>

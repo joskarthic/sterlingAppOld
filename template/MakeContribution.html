@@ -1,0 +1,76 @@
+<ion-view>
+<style>
+	
+</style>
+    <ion-content >
+        
+        <div class="padding" >
+            <div class="Headdingpad text-center " style="padding-bottom: 20px;">
+				<h3 class="flying checkfly assertive" style="color:#5d3002"><b>Make Contribution</b></h3>
+				
+            </div>
+			
+			<div class="list">
+
+				<label class="item item-input item-select">
+					<div class="input-label">
+					  Select Bank Account<span style="color: red;">*</span>
+					</div>
+				<select>
+					<option selected  disabled value="">--Select Bank--</option>
+					<option>Wells Fargo Bud</option>
+					<option>Wells Fargo Sarah</option>
+				</select>
+			</label>
+
+			</div>
+          <!--   <div class="list hide">
+                <label class="item item-input">
+                    <span class="input-label">Select Bank Account<span style="color: red;">*</span></span>
+                    <select class=""   ng-model="flying.consiti" ng-options="consi.AC_NAME_EN for consi in consitituency">
+                        <option selected  disabled value="">--Select Bank--</option>
+                    </select>
+                </label>
+            </div>
+			
+			
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Select Bank Account<span style="color: red;">*</span></span>
+					<input type="text" placeholder="">
+				</label>
+			</div> -->
+			  <div class="list">
+					<label class="item item-input item-stacked-label">
+						<span class="input-label">Enter Amount<span style="color: red;">*</span></span>
+						<input type="tel" placeholder="">
+					</label>
+			  </div>
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Optional Monthly Service Fee Amount</span>
+					<input type="tel" placeholder="">
+				</label>
+			</div>
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Transaction Date<span style="color: red;">*</span></span>
+					<input  type="text" ng-click="getTransactionDate()" ng-model="transactionDate" placeholder="">
+				</label>
+			</div>
+			<div class="list">
+				<label class="item item-input item-stacked-label">
+					<span class="input-label">Description<span style="color: red;">*</span></span>
+					<input type="text" placeholder="">
+				</label>
+			</div>
+			
+			<div class="row text-center">
+				<div class="col"> <button class="button" style="background: #600;color: white;" ng-click="flyingSquadEntries()">Submit Contribution</button></div>
+            </div>
+            
+            
+            
+        </div>
+    </ion-content>
+</ion-view>

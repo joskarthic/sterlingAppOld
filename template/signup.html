@@ -1,0 +1,57 @@
+<ion-view>
+    <style>
+    .scroll {
+        height: 100%;
+    }
+     
+    #map {
+        width: 100%;
+        height: 100%;
+    }
+	.coloring{
+		
+font-size: 25px;
+	}
+</style>
+    <ion-content>
+        
+		<div class="text-center" style="">
+           <img style="width:151px" src="img/sterling_logoS.png">
+        </div>
+        <div class="padding" >
+			
+            <div class="Headdingpad text-center" >
+                <h3  style="color:#999a9e">Sterling</h3>
+				<h3  style="color:#999a9e">Administration</h3>
+            </div>
+            <div class="padding"  style=" border: 3px;border-style: solid; border-color: #aebcd7;padding-top: 30px; background-color:#aebcd7;">
+                
+				<div class=" hide Headdingpad">
+					<h3 style="">Login</h3>
+				</div>
+                 <div class="list">
+                     <label class="item item-input">
+                       <span class="input-label">Username</span>
+                       <input class="confirm coloring"  type="text"  ng-model="signIn.userName" placeholder="Enter Your User Name" >
+                     </label>
+                 </div>
+                 <div class="list">
+                     <label class="item item-input">
+                       <span class="input-label">Password</span>
+                       <input class="confirm coloring"  type="password" ng-model="signIn.password" placeholder="Enter Your Password" >
+                     </label>
+                 </div>
+                 <div class="row text-center">
+                     <div class="col" id="register">
+						<button style="background-color:#bb680b;color:#fff" class="button  curve" ng-click="logIn()">Sign In</button>
+					 </div>
+                 </div>
+                 </div>
+        </div>
+		  <div class="hide">
+			<h4> Please Check the Latest Version from <a style="color:green" href="#" ng-click="openGepla();" >http://egov-election.pon.nic.in/gepla2016.htm</a></h4>
+		</div>
+        
+        <!--<div id="map" data-tap-disabled="true"></div>-->
+    </ion-content>
+</ion-view>
